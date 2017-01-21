@@ -1,0 +1,7 @@
+<h1 md-dialog-title>{{room.number}}</h1>
+<md-dialog-content>
+	<textarea style="resize: none;" rows="10" cols="35" [(ngModel)]="room.activity"></textarea>
+</md-dialog-content>
+<md-dialog-actions>
+	<button md-button (click)="socketService.setRoom(room, floor)" md-dialog-close>Edit</button>
+</md-dialog-actions>

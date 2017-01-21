@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Remove blue border on focused button*/
+button:focus {
+	outline : 0;
+}
+
+/* Set the color of the bar under tabs */
+md-ink-bar {
+	background-color: #77AA77;
+}
+
+.test:hover {
+	fill:red;
+}

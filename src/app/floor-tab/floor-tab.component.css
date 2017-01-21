@@ -1,0 +1,18 @@
+img {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	height: 600px;
+}
+
+button {
+	background-color: #77AA77;
+	color:white;
+}
+
+.relative-position {
+	position: relative;
+}
+
+.absolute-position {
+	position: absolute;
+}

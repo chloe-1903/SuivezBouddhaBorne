@@ -1,0 +1,32 @@
+.enabled {
+	fill: #77aa77;
+}
+
+.enabled.room-with-event {
+	fill: #CC6677;
+}
+
+.enabled.room-with-event:hover {
+	fill: #993344;
+}
+
+.enabled:hover {
+	fill: #4f7d4f;
+	cursor: pointer;
+}
+
+.legende:hover {
+	cursor: auto;
+}
+
+.svg-container { 
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+
+svg {
+	max-height: 80vh;
+}

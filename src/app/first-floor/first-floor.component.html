@@ -1,0 +1,138 @@
+<div class="svg-container">
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1500 894" >
+		<g>
+			<!-- Escaliers -->
+			<rect x="337" y="632" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="643" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="654" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="665" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="676" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="687" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="698" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="709" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="720" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<rect x="337" y="731" width="90" height="11" fill="#b3b3b3" stroke="white" />
+			<!-- Fin escaliers -->
+
+			<!-- Toilettes -->
+			<rect x="293" y="213" width="150" height="80" fill="#b3b3b3" stroke="white" />
+
+			<!-- Mur batiment droite haut -->
+			<path d="M 509 373 L 509 337" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<path d="M 509 523 L 509 415" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<!-- Porte mur droite haut-->
+			<path d="M 529 413 L 509 373" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+
+			<!-- Porte mur droite bas -->
+			<path d="M 529 563 L 509 523" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<!-- Mur gauche haut -->
+			<path d="M 215 403 L 215 363" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<!-- Mur gauche milieu -->
+			<path d="M 215 523 L 215 445" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<!-- Porte gauche haut -->
+			<path d="M 235 443 L 215 403" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<!-- Porte gauche bas -->
+			<path d="M 235 563 L 215 523" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<!-- Mur gauche bas -->
+			<path d="M 213 573 L 213 613" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+			<!-- Mur droite bas -->
+			<path d="M 512 573 L 512 613" stroke="#b3b3b3" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" />
+
+			<!-- Enabled rooms -->
+			<rect class="enabled" x="3" y="613" width="250" height="150" stroke="white" (click)="openModal('Foyer')" [ngClass]="{'room-with-event' : isEventSet('Foyer')}" />
+			<text x="128" y="688" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">Foyer</text>
+
+			<rect class="enabled" x="613" y="773" width="100" height="120" stroke="white" (click)="openModal('O+211')" [ngClass]="{'room-with-event' : isEventSet('O+211')}" />
+			<text x="663" y="833" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">O+211</text>
+
+			<rect class="enabled" x="613" y="613" width="100" height="120" stroke="white" (click)="openModal('O+225')" [ngClass]="{'room-with-event' : isEventSet('O+225')}" />
+			<text x="663" y="673" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">O+225</text>
+
+			<rect class="enabled" x="512" y="613" width="101" height="120" stroke="white" (click)="openModal('O+226')" [ngClass]="{'room-with-event' : isEventSet('O+226')}" />
+			<text x="562" y="673" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">O+226</text>
+
+			<rect class="enabled" x="863" y="613" width="130" height="120" stroke="white" (click)="openModal('O+223')" [ngClass]="{'room-with-event' : isEventSet('O+223')}" />
+			<text x="928" y="673" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">O+223</text>
+
+			<rect class="enabled" x="993" y="613" width="130" height="120" stroke="white" (click)="openModal('O+222')" [ngClass]="{'room-with-event' : isEventSet('O+222')}" />
+			<text x="1058" y="673" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">O+222</text>
+
+			<rect class="enabled" x="1162" y="731" width="130" height="162" stroke="white" (click)="openModal('O+218')" [ngClass]="{'room-with-event' : isEventSet('O+218')}" />
+			<text x="1227" y="812" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">0+218</text>
+
+			<rect class="enabled" x="1033" y="773" width="129" height="120" stroke="white" (click)="openModal('O+217')" [ngClass]="{'room-with-event' : isEventSet('O+217')}" />
+			<text x="1097" y="833" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">0+217</text>
+
+			<rect class="enabled" x="913" y="773" width="120" height="120" stroke="white" (click)="openModal('O+216')" [ngClass]="{'room-with-event' : isEventSet('O+216')}" />
+			<text x="973" y="833" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">0+216</text>
+			
+			<rect class="enabled" x="1162" y="613" width="130" height="118" stroke="white" (click)="openModal('O+219')" [ngClass]="{'room-with-event' : isEventSet('O+219')}" />
+			<text x="1227" y="672" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">0+219</text>
+
+			<rect class="enabled" x="43" y="213" width="250" height="150" stroke="white" (click)="openModal('Bibliotheque')" [ngClass]="{'room-with-event' : isEventSet('Bibliotheque')}" />
+			<text x="168" y="288" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">Bibliothèque</text>
+
+			<rect class="enabled" x="443" y="213" width="150" height="120" stroke="white" (click)="openModal('O+227')" [ngClass]="{'room-with-event' : isEventSet('O+227')}"/>
+			<text x="518" y="273" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">O+227</text>
+
+			<!-- Amphithéatre -->
+			<path class="enabled" d="M 683 3 L 683 385.7 L 1062.7 385.7 M 1062.7 385.7 Q 1041.6 45.52 683 3" stroke="none" stroke-miterlimit="10" (click)="openModal('Amphitheatre')" [ngClass]="{'room-with-event' : isEventSet('Amphitheatre')}" />
+			<text x="830" y="250" text-anchor="middle" alignment-baseline="central" fill="white" font-size="20">Amphithéatre</text>
+
+			<!-- Disabled rooms -->
+			<rect x="123" y="763" width="130" height="130" fill="#b3b3b3" stroke="white"/>
+			<rect x="253" y="813" width="100" height="80" fill="#b3b3b3" stroke="white"/>
+			<rect x="353" y="813" width="130" height="80" fill="#b3b3b3" stroke="white"/>
+			<rect x="483" y="813" width="130" height="80" fill="#b3b3b3" stroke="white"/>
+			<rect x="523" y="773" width="90" height="40" fill="#b3b3b3" stroke="white"/>
+			<rect x="713" y="793" width="200" height="100" fill="#b3b3b3" stroke="white"/>
+			<rect x="713" y="613" width="80" height="120" fill="#b3b3b3" stroke="white"/>
+			<rect x="427" y="632" width="39" height="130" fill="#b3b3b3" stroke="white"/>
+			<rect x="297" y="632" width="40" height="130" fill="#b3b3b3" stroke="white"/>
+			<rect x="297" y="742" width="169" height="40" fill="#b3b3b3" stroke="white"/>
+
+
+			<!-- Escaliers -->
+			<rect x="328" y="323" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="336" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="349" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="362" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="375" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="388" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="401" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="414" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="427" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+			<rect x="328" y="440" width="85" height="13" fill="#b3b3b3" stroke="white"/>
+
+
+			<!-- Escaliers -->
+			<rect x="1099" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1119,713)"/>
+			<rect x="1091" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1111,713)"/>
+			<rect x="1083" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1103,713)"/>
+			<rect x="1075" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1095,713)"/>
+			<rect x="1067" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1087,713)"/>
+			<rect x="1059" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1079,713)"/>
+			<rect x="1051" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1071,713)"/>
+			<rect x="1043" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1063,713)"/>
+			<rect x="1035" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1055,713)"/>
+			<rect x="1027" y="709" width="40" height="8" fill="#b3b3b3" stroke="white" transform="rotate(90,1047,713)"/>
+
+
+			<!-- Doors -->
+			<path d="M 793 613 L 813 613" stroke="#b3b3b3" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" />
+			<path d="M 813 613 L 853 653" stroke="#b3b3b3" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" />
+			<path d="M 1123 613 L 1133 613" stroke="#b3b3b3" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" />
+			<path d="M 1133 613 L 1152 633" stroke="#b3b3b3" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" />
+
+			<!-- Image toilette -->
+			<image x="343" y="227.94" width="50" height="50" xlink:href="https://cdn4.iconfinder.com/data/icons/dot/128/toilets.png" preserveAspectRatio="none" />
+
+			<!-- Légende -->
+			<rect class="enabled room-with-event legende" x="1200" y="200" width="50" height="50" />
+			<text x="1275" y="225" text-anchor="left" alignment-baseline="central" fill="#595959" font-size="30">Salle non libre</text>
+
+			<rect class="enabled legende" x="1200" y="265" width="50" height="50" />
+			<text x="1275" y="290" text-anchor="left" alignment-baseline="central" fill="#595959" font-size="30">Salle libre</text>
+		</g>
+	</svg>
+</div>

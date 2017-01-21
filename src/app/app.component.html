@@ -1,3 +1,54 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-fixed-top navbar-light bg-faded whiteframe">
+	<span class="navbar-brand">
+		<img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		Suivez Bouddha!
+	</span>
+</nav>
+<div class="home-content row">
+	<md-tab-group>
+		<md-tab [label]="firstFloorName">
+			<app-first-floor [floor]="floors[0]"></app-first-floor>
+		</md-tab>
+
+		<md-tab [label]="secondFloorName">
+			<app-second-floor [floor]="floors[1]"></app-second-floor>
+		</md-tab>
+	</md-tab-group>
+</div>
+
+
+
+<!-- <div class="row floors text-xs-center">
+		<label>Floor :</label>
+		<button md-fab (click)="floor = 1" [ngClass]="{'floorActive': (floor==1)}">1</button>
+		<button md-fab (click)="floor = 2" [ngClass]="{'floorActive': (floor==2)}">2</button>
+	</div> -->
+	<!-- <div *ngFor="let room of rooms" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+		<md-card class="text-xs-center">
+			<button md-icon-button class="del-room-button" (click)="removeRoom(room)">
+				<md-icon>clear</md-icon>
+			</button>
+			<md-card-title>
+				{{room.number}}
+			</md-card-title>
+			<md-card-content>
+				<textarea class="form-control" [(ngModel)]="room.activity" cols="20" rows="7"></textarea>
+			</md-card-content>
+			<button md-button (click)="setRoom(room)">
+				Edit
+			</button>
+		</md-card>
+	</div>
+	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+		<md-card class="text-xs-center align-middle add-card">
+			<md-input-container>
+				<input type="number" md-input [(ngModel)]="newRoom.number">
+			</md-input-container>
+			<md-card-content>
+				<textarea class="form-control" [(ngModel)]="newRoom.activity" cols="20" rows="7"></textarea>
+			</md-card-content>
+			<button md-icon-button (click)="addRoom(newRoom)">
+				<md-icon>add</md-icon>
+			</button>
+		</md-card>
+	</div> -->
