@@ -1,25 +1,4 @@
-.enabled {
-	fill: #77aa77;
-}
-
-.enabled.room-with-event {
-	fill: #CC6677;
-}
-
-.enabled.room-with-event:hover {
-	fill: #993344;
-}
-
-.enabled:hover {
-	fill: #4f7d4f;
-	cursor: pointer;
-}
-
-.legende:hover {
-	cursor: auto;
-}
-
-/*rect.enabled {
+rect.enabled {
 	opacity: 1;
 }
 
@@ -31,7 +10,7 @@ rect.enabled:hover {
 path.enabled:hover {
 	fill: #446f44;
 	cursor: pointer;
-}*/
+}
 
 .svg-container { 
 	display: inline-block;

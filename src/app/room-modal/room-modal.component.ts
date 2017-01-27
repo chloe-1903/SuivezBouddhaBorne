@@ -11,7 +11,6 @@ import { SocketService } from '../socket.service';
 export class RoomModalComponent implements OnInit {
 	room : Object;
 	floor : String;
-	timeInterval : String;
 
 	constructor(public dialogRef: MdDialogRef<RoomModalComponent>, private socketService: SocketService) {
 	}

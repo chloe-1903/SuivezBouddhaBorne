@@ -20,7 +20,7 @@ export class AppComponent {
 		this.socketService.getRooms();
 
 		this.socketService.socket.on('allRooms', function(data){
-			console.log("Message received : allRooms");
+			console.log("Message received : allRooms")
 			this.floors = JSON.parse(data);
 		}.bind(this));
 	};
