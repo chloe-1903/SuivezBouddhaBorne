@@ -24,3 +24,7 @@ app-floor-tab {
 rect#test {
 	fill: black;
 }
+
+.floor {
+	padding-top: 300px;
+}

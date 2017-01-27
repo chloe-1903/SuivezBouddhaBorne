@@ -10,13 +10,16 @@ import { RoomModalComponent } from '../room-modal/room-modal.component';
 export class FirstFloorComponent implements OnInit {
 	@Input() floor;
 	name = "Bâtiment Ouest - Rez-de-chaussée";
+	roomSelected = false;
+
+	selectedInterval = "9h - 10h";
 
 	constructor(public dialog: MdDialog) { }
 
 	booleanTest = true;
 
-	test() {
-		return this.booleanTest;
+	timeSelected(event) {
+		this.selectedInterval = event;
 	}
 
 	isEventSet(roomNumber){
@@ -24,7 +27,7 @@ export class FirstFloorComponent implements OnInit {
 			return false;
 		}
 		var room = this.findRoom(roomNumber);
-		return (room.activity != "");
+		return (room.activity[this.selectedInterval] != "");
 	}
 
 	findRoom(roomNumber) {
@@ -38,10 +41,10 @@ export class FirstFloorComponent implements OnInit {
 
 	openModal(roomNumber) {
 		console.log("Room : " + roomNumber);
-		console.log(this.dialog);
 		var roomModal = this.dialog.open(RoomModalComponent);
 		roomModal.componentInstance.room = this.findRoom(roomNumber);
 		roomModal.componentInstance.floor = this.name;
+		roomModal.componentInstance.timeInterval = this.selectedInterval;
 	}
 
 	ngOnInit() {

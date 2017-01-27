@@ -10,6 +10,7 @@ import { RoomModalComponent } from './room-modal/room-modal.component';
 import { FloorTabComponent } from './floor-tab/floor-tab.component';
 import { FirstFloorComponent } from './first-floor/first-floor.component';
 import { SecondFloorComponent } from './second-floor/second-floor.component';
+import { TimeSelectorComponent } from './time-selector/time-selector.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SecondFloorComponent } from './second-floor/second-floor.component';
     RoomModalComponent,
     FloorTabComponent,
     FirstFloorComponent,
-    SecondFloorComponent
+    SecondFloorComponent,
+    TimeSelectorComponent
   ],
   entryComponents: [RoomModalComponent],
   imports: [
