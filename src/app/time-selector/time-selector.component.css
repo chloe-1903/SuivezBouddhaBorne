@@ -1,12 +1,31 @@
 h3 {
-	margin-top: 15px;
+	padding: 15px;
+	margin: 0px;
+	background-color: #737373;
+	color: white;
 }
 
 .text-center {
 	text-align: center;
 }
 
-.selectedInterval {
+md-list-item {
+	margin-bottom: 5px;
+	border: 1px solid lightgrey;
+	transition: all .2s ease-in-out;
+}
+
+md-list-item:hover {
+	transform: scale(1.2);
+	background-color: #F5F5F5;
+	z-index: 1000;
+}
+
+md-nav-list {
+	padding-top: 5px;
+}
+
+.selectedInterval, .selectedInterval:hover {
 	background-color: #77aa77;
 	color: white;
 }

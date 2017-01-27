@@ -1,6 +1,6 @@
 <h3 md-subheader class="text-center">Créneaux horaires :</h3>
 <md-nav-list>
 	<md-list-item class="text-center" [ngClass]="{'selectedInterval': (selectedInterval == timeInterval)}" *ngFor="let timeInterval of timeIntervals" (click)=selectInterval(timeInterval)>
-		{{timeInterval}}
+		<span style="text-align: center;width: 100%;">{{timeInterval}}</span>
 	</md-list-item>
 </md-nav-list>
