@@ -1,6 +1,6 @@
-<div class="col-md-9">
+<div class="col-md-12">
 	<div class="svg-container">
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1500 894" >
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1500 894">
 			<g>
 				<!-- Escaliers -->
 				<rect x="337" y="632" width="90" height="11" fill="#b3b3b3" stroke="white" />
@@ -128,14 +128,10 @@
 				<!-- Image toilette -->
 				<image x="343" y="227.94" width="50" height="50" xlink:href="https://cdn4.iconfinder.com/data/icons/dot/128/toilets.png" preserveAspectRatio="none" />
 
-				<!-- Légende -->
-				<rect class="enabled room-with-event legende" x="1200" y="200" width="50" height="50" />
-				<text x="1275" y="225" text-anchor="left" alignment-baseline="central" fill="#595959" font-size="30">Salle avec activité</text>
 
-				<rect class="enabled legende" x="1200" y="265" width="50" height="50" />
-				<text x="1275" y="290" text-anchor="left" alignment-baseline="central" fill="#595959" font-size="30">Salle sans activité</text>
+				<circle cx="470" cy="480" r="20" fill="#993344" />
+				<text x="470" y="530" text-anchor="middle" alignment-baseline="central" fill="#993344" font-size="30">Vouos êtes ici</text>
 			</g>
 		</svg>
 	</div>
 </div>
-<app-time-selector [selectedInterval]="selectedInterval" (selectedIntervalUpdate)="timeSelected($event)" class="col-md-3"></app-time-selector>

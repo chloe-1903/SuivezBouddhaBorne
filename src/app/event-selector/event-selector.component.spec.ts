@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TimeSelectorComponent } from './time-selector.component';
+import { EventSelectorComponent } from './event-selector.component';
 
-describe('TimeSelectorComponent', () => {
-  let component: TimeSelectorComponent;
-  let fixture: ComponentFixture<TimeSelectorComponent>;
+describe('EventSelectorComponent', () => {
+  let component: EventSelectorComponent;
+  let fixture: ComponentFixture<EventSelectorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimeSelectorComponent ]
+      declarations: [ EventSelectorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TimeSelectorComponent);
+    fixture = TestBed.createComponent(EventSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

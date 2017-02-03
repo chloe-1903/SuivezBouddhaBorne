@@ -4,7 +4,7 @@ import { MdSnackBar } from '@angular/material';
 
 @Injectable()
 export class SocketService {
-	socket = io('http://localhost:8080');
+	socket = io('http://10.212.126.143:8080');
 
 	getRooms() : void {
 		this.socket.emit('askAllRooms');

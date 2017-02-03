@@ -9,6 +9,7 @@ import { RoomModalComponent } from '../room-modal/room-modal.component';
 })
 export class FirstFloorComponent implements OnInit {
 	@Input() floor;
+	@Input() selectedEventRoomNumber;
 	name = "Bâtiment Ouest - Rez-de-chaussée";
 	roomSelected = false;
 
@@ -26,8 +27,7 @@ export class FirstFloorComponent implements OnInit {
 		if(!this.floor){
 			return false;
 		}
-		var room = this.findRoom(roomNumber);
-		return (room.activity[this.selectedInterval] != "");
+		return (roomNumber == this.selectedEventRoomNumber);
 	}
 
 	findRoom(roomNumber) {

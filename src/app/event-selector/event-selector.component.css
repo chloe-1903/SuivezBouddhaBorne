@@ -1,0 +1,45 @@
+h3 {
+	padding: 15px;
+	margin: 0px;
+	background-color: #737373;
+	color: white;
+}
+
+.my-label {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #77aa77;
+	margin-top: 5px;
+	color: #77aa77;
+	cursor: pointer;
+	padding-top: 12px;
+}
+
+md-list-item {
+	border: 1px solid lightgrey;
+	border-top: none;
+}
+
+md-nav-list {
+	padding-top: 0px;
+}
+
+.selectedEvent {
+	background-color: #77aa77;
+	color: white;
+}
+
+.collapse {
+	display: block;
+	visibility: hidden;
+	height: 0px;
+	opacity: 0;
+}
+
+.collapse.show {
+	visibility: visible;
+	transition: opacity 1s ease-out;
+	height: auto;
+	opacity: 1;
+	z-index: 10000;
+}

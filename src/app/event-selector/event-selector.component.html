@@ -1,0 +1,13 @@
+<h3 md-subheader class="text-center">Créneaux horaires :</h3>
+<div *ngFor="let key of keys()" [hidden]="events[key].length < 1">
+	<div  (click)="setItemSelected(key)" class="my-label text-center align-middle">
+		<span>{{key}}</span>
+	</div>
+
+	<md-nav-list [ngbCollapse]="isCollapse(key)" [ngClass]="{'collapsed-time': itemSelected != key, 'expanded-time': itemSelected == key}">
+		<md-list-item *ngFor="let event of events[key]" (click)="selectRoom(event, event.selectedIndex)" [hidden]="event.room == 'Accueil'" [ngClass]="{'selectedEvent': event == eventSelected}">
+			<span class="label text-center">{{event.activity}}</span>
+		</md-list-item>
+	</md-nav-list>
+
+</div>
